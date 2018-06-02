@@ -11,6 +11,7 @@ def get_card_winrates(character)
       card.winrate = row.children[2].text
       card.expected_winrate = row.children[3].text
       card.plus_minus = row.children[4].text
+      card.character_id = character.id
 
       card.save!
     end
