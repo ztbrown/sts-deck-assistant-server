@@ -22,4 +22,15 @@ namespace :winrates do
   task :silent => :environment do
     get_card_winrates('silent')
   end
+  task :defect => :environment do
+    get_card_winrates('defect')
+  end
+  task :ironclad => :environment do
+    get_card_winrates('ironclad')
+  end
+  task :all => :environment do
+    get_card_winrates('silent')
+    get_card_winrates('defect')
+    get_card_winrates('ironclad')
+  end
 end
